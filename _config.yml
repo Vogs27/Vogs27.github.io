@@ -1,3 +1,38 @@
-theme: jekyll-theme-architect
 title: Vogs27
-description: Who is Vogs27? What can you find in his repo?
+description: Vogs27 page - Projects and ideas
+url: "https://Vogs27.github.io"
+baseurl: ""
+
+# Tema
+theme: jekyll-theme-architect
+
+# Collezioni per i progetti
+collections:
+  progetti:
+    output: true
+    permalink: /:collection/:name/
+
+# Plugin
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Impostazioni Markdown
+markdown: kramdown
+highlighter: rouge
+
+# Impostazioni autore
+author:
+  name: Alessandro Vogrig
+  # email: tua-email@esempio.com
+  github: Vogs27
+  #linkedin: il-tuo-profilo-linkedin
+
+# Menu di navigazione
+navigation:
+  - title: Home
+    url: /
+  - title: Progetti
+    url: /progetti/
+  - title: About
+    url: /about/

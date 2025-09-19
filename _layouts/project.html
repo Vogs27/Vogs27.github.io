@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="project-header">
+  <h1>{{ page.title }}</h1>
+  <div class="project-meta">
+    <span class="status status-{{ page.status }}">{{ page.status | capitalize }}</span>
+    {% if page.technologies %}
+    <div class="technologies">
+      {% for tech in page.technologies %}
+        <span class="tech-tag">{{ tech }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<div class="project-content">
+  {{ content }}
+</div>
+
+<div class="project-navigation">
+  {% assign projects = site.progetti | sort: 'start_date' | reverse %}
+  {% for project in projects %}
+    {% if project.url == page.url %}
+      {% unless forloop.first %}
+        {% assign prev_project = projects[forloop.index0] %}
+        <a href="{{ prev_project.url }}" class="nav-prev">← {{ prev_project.title }}</a>
+      {% endunless %}
+      {% unless forloop.last %}
+        {% assign next_project = projects[forloop.index] %}
+        <a href="{{ next_project.url }}" class="nav-next">{{ next_project.title }} →</a>
+      {% endunless %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+</div>

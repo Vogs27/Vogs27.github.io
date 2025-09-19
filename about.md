@@ -3,13 +3,42 @@ layout: default
 title: About Me
 ---
 
-# About Me  
-<div style="display: flex; align-items: center;">
-    <img src="/assets/images/me_w_zuel.jpg" alt="Me and my dog" width="200" style="margin-right: 20px;">
-    <p>Hi! I'm Alessandro Vogrig.<br>
-I'm a thesist at Politecnico di Milano, an HAM radio operator and a maker. I also love taking photos and hiking (you can check my IG).<br>
-My HAM radio callsign is IU2OZB and you can also find me on <a href="https://www.qrz.com/db/iu2ozb">QRZ</a>.<br>
-I have many ongoing projects and idea: here on Github are public available the (almost) finished ones or the abandoned ones left public for legacy.</p>
-</div>
+# Who I am
 
+![La tua foto](/assets/images/me_w_zuel.jpg){: .profile-image}
 
+<!-- Ciao! Sono [Il Tuo Nome], uno sviluppatore appassionato con esperienza in [le tue specializzazioni].
+
+## La Mia Storia
+
+[Racconta la tua storia professionale, formazione, passioni...]
+
+## Competenze Tecniche
+
+### Linguaggi di Programmazione
+- Python
+- JavaScript/TypeScript
+- Java
+- [Altri linguaggi...]
+
+### Framework e Tecnologie
+- React/Vue.js
+- Node.js
+- Django/Flask
+- [Altri framework...]
+
+### Strumenti e Metodologie
+- Git/GitHub
+- Docker
+- Agile/Scrum
+- [Altri strumenti...]
+
+## Cosa Mi Motiva
+
+[Parla delle tue passioni, obiettivi, valori...]
+
+## Contatti
+
+- **Email:** [tua-email@esempio.com](mailto:tua-email@esempio.com)
+- **GitHub:** [github.com/il-tuo-username](https://github.com/il-tuo-username)
+- **LinkedIn:** [linkedin.com/in/il-tuo-profilo](https://linkedin.com/in/il-tuo-profilo) -->
