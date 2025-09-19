@@ -1,0 +1,175 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Stili personalizzati per la navigazione */
+#main-nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+#main-nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#main-nav a:hover,
+#main-nav a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Stili per il portfolio */
+.project-preview, .project-item {
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.project-item.current {
+  border-left: 4px solid #28a745;
+}
+
+.project-item.archived {
+  border-left: 4px solid #6c757d;
+  opacity: 0.8;
+}
+
+.status-active {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-archived {
+  color: #6c757d;
+  font-weight: bold;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: #f1f8ff;
+  color: #0366d6;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.news-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.project-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.nav-prev, .nav-next {
+  flex: 1;
+  padding: 10px;
+  text-decoration: none;
+  background: #f8f9fa;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+
+.nav-next {
+  text-align: right;
+}
+
+.project-header {
+  margin-bottom: 30px;
+}
+
+.project-meta {
+  margin-top: 10px;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.status-attivo {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-archiviato {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status-completato {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.technologies {
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  #main-nav li {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .profile-image {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .project-navigation {
+    flex-direction: column;
+  }
+  
+  .nav-prev, .nav-next {
+    margin: 5px 0;
+  }
+}
