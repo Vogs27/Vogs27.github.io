@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Progetti
+title: Projects
 ---
 
 # Projects

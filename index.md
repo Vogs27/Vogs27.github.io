@@ -5,7 +5,8 @@ title: Home
 
 # Welcome
 
-Welcome to my page! Here I collect my archived projects and the latest I'm working on. You may also find some ideas for future projects that I have in mind.
+Welcome! Here I collect my archived projects and the latest I'm working on. You may also find some ideas for future projects that I have in mind.  
+**This page is in a work-in-progress state! Thanks for your understanding!**
 
 ## Latest news
 
@@ -24,7 +25,7 @@ Welcome to my page! Here I collect my archived projects and the latest I'm worki
 <div class="project-preview">
   <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
   <p>{{ project.description }}</p>
-  <p><strong>Tecnologie:</strong> {{ project.technologies | join: ", " }}</p>
+  <p><strong>Tags:</strong> {{ project.technologies | join: ", " }}</p>
 </div>
 {% endfor %}
 
